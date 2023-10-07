@@ -1,6 +1,8 @@
 .mediaViewInfo {
 	--web-view-name: Cover;
 	--web-view-id: Cover;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 	--web-page-font: impact;
@@ -23,6 +25,8 @@
 	overflow: hidden;
 	--web-view-name: Cover;
 	--web-view-id: Cover;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 	--web-page-font: impact;
@@ -175,4 +179,41 @@
 	font-size: 55px;
 	color: rgba(255,255,255,1);
 	letter-spacing: -0.1px;
+}
+#Component_3__8 {
+	opacity: 0.64;
+	position: absolute;
+	width: 441px;
+	height: 132px;
+	left: 1429px;
+	top: 815px;
+	overflow: visible;
+}
+#Rectangle_1_y {
+	fill: url(#Rectangle_1_y);
+}
+.Rectangle_1_y {
+	position: absolute;
+	overflow: visible;
+	width: 441px;
+	height: 132px;
+	left: 0px;
+	top: 0px;
+}
+#Back_Home {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	left: 60px;
+	top: 41px;
+	position: absolute;
+	overflow: visible;
+	width: 322px;
+	white-space: nowrap;
+	line-height: 402px;
+	margin-top: -171.5px;
+	text-align: left;
+	font-family: Nexa XBold, impact;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 59px;
+	color: rgba(255,255,255,1);
 }
