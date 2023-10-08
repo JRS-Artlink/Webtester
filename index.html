@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Repository Link</title>
     <style>
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+        }
+
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -15,6 +23,7 @@
             color: white;
             border-radius: 5px;
             transition: background-color 0.3s;
+            cursor: move;
         }
 
         .button:hover {
@@ -23,7 +32,13 @@
     </style>
 </head>
 <body>
-    <a class="button" href="https://quantaknot.com/">Back To Quantaknot</a>
+    <div class="button-container">
+        <div class="button" draggable="true">
+            Visit My Website
+        </div>
+    </div>
+
+    <a class="button" href="https://your-squarespace-website-url.com">Visit My Website</a>
 </body>
 </html>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
