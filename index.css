@@ -37,7 +37,7 @@
 }
 
 #Fabric_Background {
-    position: absolute;
+    position: relative;
     width: 100%; /* Make the Fabric Background container width 100% */
     height: auto; /* Allow the height to scale proportionally */
     max-width: 1145.997px;
