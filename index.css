@@ -20,7 +20,7 @@
 }
 
 #Landing {
-    position: fixed;
+    position: absolute;
     max-width: 1170px;
     margin: 0 auto;
     height: 2532px;
@@ -37,7 +37,7 @@
 }
 
 #Fabric_Background {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: auto;
     max-width: 1145.997px;
