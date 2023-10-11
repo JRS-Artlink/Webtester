@@ -167,7 +167,7 @@
 }
 
 /* Add this media query to adjust styles for mobile devices */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1080px) {
     #Landing {
         height: auto;
     }
