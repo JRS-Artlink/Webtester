@@ -21,8 +21,8 @@
 
 #Landing {
     position: relative;
-	max-width: 1080px; /* Set a maximum width to prevent it from becoming too wide on large screens */
-    margin: 0 auto; /* Center the content container */
+    max-width: 1080px;
+    margin: 0 auto;
     height: 1920px;
     font-family: impact;
     background-color: rgba(255,255,255,1);
@@ -38,8 +38,8 @@
 
 #Fabric_Background {
     position: relative;
-    width: 100%; /* Make the Fabric Background container width 100% */
-    height: auto; /* Allow the height to scale proportionally */
+    width: 100%;
+    height: auto;
     max-width: 1145.997px;
     max-height: 2325.104px;
     left: -34.136px;
@@ -166,3 +166,26 @@
     animation-name: moveSphere3;
 }
 
+/* Add this media query to adjust styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    #Landing {
+        height: auto;
+    }
+
+    #Fabric_Background {
+        max-width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+    }
+
+    #JS_Logo {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .sphere {
+        width: 30px;
+        height: 30px;
+    }
+}
