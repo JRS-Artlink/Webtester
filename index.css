@@ -184,4 +184,16 @@
         width: 30px;
         height: 30px;
     }
+     #Component_7__2 {
+        display: block; /* Ensure the element is set to be visible */
+        width: 100%; /* Adjust width as needed for mobile view */
+        height: auto; /* Adjust height as needed for mobile view */
+        position: static; /* Reset position for mobile view */
+        left: auto; /* Reset left position for mobile view */
+        top: auto; /* Reset top position for mobile view */
+        opacity: 1; /* Reset opacity for mobile view */
+        background-image: none; /* Reset background image for mobile view */
+        backdrop-filter: none; /* Reset backdrop filter for mobile view */
+    }
+}
 }
