@@ -169,12 +169,12 @@
 /* Add this media query to adjust styles for mobile devices */
 @media only screen and (max-width: 1080px) {
     #Landing {
-        height: auto;
+        height: fit;
     }
 
     #Fabric_Background {
-        max-width: 100%;
-        height: auto;
+        max-width: 70%;
+        height: fit;
         left: 0;
         top: 0;
     }
