@@ -168,7 +168,7 @@
 /* Add this media query to adjust styles for mobile devices */
 @media only screen and (max-width: 767px) {
     #Landing {
-        height: auto;
+        height: 500px;
     }
 
     #Fabric_Background {
