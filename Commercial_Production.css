@@ -1,0 +1,48 @@
+.mediaViewInfo {
+	--web-view-name: Commercial Production;
+	--web-view-id: Commercial_Production;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Commercial_Production;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Commercial_Production {
+	position: absolute;
+	width: 1080px;
+	height: 1920px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Commercial Production;
+	--web-view-id: Commercial_Production;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Rectangle_3 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3 {
+	filter: drop-shadow(18px 19px 12px rgba(172, 189, 228, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 931px;
+	height: 581px;
+	left: 111px;
+	top: 96px;
+}
