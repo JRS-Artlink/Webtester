@@ -1,4 +1,4 @@
-@mediaViewInfo {
+ @mediaViewInfo {
     --web-view-name: Landing;
     --web-view-id: Landing;
     --web-scale-to-fit: true;
@@ -170,8 +170,8 @@
 
     #Fabric_Background {
         position: absolute;
-        width: 1170px;
-        height: 2532px;
+        width: 100%;
+        height: 100%;
         padding-bottom: calc(100% / 1.36);
         left: -34.136px;
         top: -202.552px;
