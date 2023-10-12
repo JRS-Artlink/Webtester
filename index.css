@@ -74,9 +74,9 @@
 
 #Component_7__2 {
     mix-blend-mode: normal;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     left: auto;
     top: auto;
     overflow: visible;
