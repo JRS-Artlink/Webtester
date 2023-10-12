@@ -84,7 +84,7 @@
 }
 
 #n_1 {
-    position: relative;
+    position: absolute;
     width: 1331px;
     height: 667px;
     left: -125px;
