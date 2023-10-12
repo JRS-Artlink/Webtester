@@ -1,227 +1,72 @@
-@mediaViewInfo {
-    --web-view-name: Landing;
-    --web-view-id: Landing;
-    --web-scale-to-fit: true;
-    --web-scale-to-fit-type: fit;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-    --web-page-font: impact;
+.mediaViewInfo {
+	--web-view-name: Landing;
+	--web-view-id: Landing;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+	--web-page-font: impact;
 }
-
 :root {
-    --web-view-ids: Landing;
+	--web-view-ids: Landing;
 }
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
 }
-
 #Landing {
-    position: relative;
-    max-width: 1080px;
-    margin: 0 auto;
-    height: 1920px;
-    font-family: impact;
-    background-color: rgba(255,255,255,1);
-    overflow: hidden;
-    --web-view-name: Landing;
-    --web-view-id: Landing;
-    --web-scale-to-fit: true;
-    --web-scale-to-fit-type: fit;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-    --web-page-font: impact;
+	position: absolute;
+	width: 1080px;
+	height: 1920px;
+	font-family: impact;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Landing;
+	--web-view-id: Landing;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+	--web-page-font: impact;
 }
-
 #Fabric_Background {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: calc(100% / 1.36);
-    left: -34.136px;
-    top: -202.552px;
-    overflow: visible;
+	position: absolute;
+	width: 1145.997px;
+	height: 2325.104px;
+	left: -34.136px;
+	top: -202.552px;
+	overflow: visible;
 }
-
 #JS_Logo {
-    mix-blend-mode: luminosity;
-    filter: drop-shadow(-5px 3px 7px rgba(140, 141, 157, 0.722));
-    position: absolute;
-    width: 93px;
-    height: 70px;
-    left: 29px;
-    top: 24px;
-    overflow: visible;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+	mix-blend-mode: luminosity;
+	filter: drop-shadow(-5px 3px 7px rgba(140, 141, 157, 0.722));
+	position: absolute;
+	width: 93px;
+	height: 70px;
+	left: 29px;
+	top: 24px;
+	overflow: visible;
 }
-
-#JS_Logo:hover {
-    transform: scale(1.1);
-}
-
 #n_D_Anima_01 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 930px;
-    top: 0px;
-    overflow: visible;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 930px;
+	top: 0px;
+	overflow: visible;
 }
-
 #Component_7__2 {
-    mix-blend-mode: normal;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    left: auto;
-    top: auto;
-    overflow: visible;
-    background-image: none;
-    backdrop-filter: none;
-    opacity: 1;
+	mix-blend-mode: normal;
+	position: absolute;
+	width: 1202.348px;
+	height: 1330.852px;
+	left: -73.252px;
+	top: 615px;
+	overflow: hidden;
 }
-
 #n_1 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    left: auto;
-    top: auto;
-    overflow: visible;
-}
-
-.sphere-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.sphere {
-    width: 50px;
-    height: 50px;
-    background-color: #3498db;
-    border-radius: 50%;
-    position: relative;
-    animation: rotate 15s linear infinite;
-}
-
-.sphere2 {
-    background-color: #4ae73c;
-    animation: rotate2 10s linear infinite;
-}
-
-.sphere3 {
-    background-color: #fcf048;
-    animation: rotate3 5s linear infinite;
-}
-
-@keyframes rotate {
-    0% { transform: rotate(15deg); }
-    100% { transform: rotate(360deg); }
-}
-
-@keyframes rotate2 {
-    0% { transform: rotate(90deg); }
-    100% { transform: rotate(-360deg); }
-}
-
-@keyframes rotate3 {
-    0% { transform: rotate(270deg); }
-    100% { transform: rotate(360deg); }
-}
-
-@keyframes moveSphere1 {
-    0% { bottom: 150; top: 0; }
-    50% { bottom: 150px; top: 150px; }
-    100% { bottom: 0; top: 0; }
-}
-
-@keyframes moveSphere2 {
-    0% { right: 0; top: 0; }
-    50% { right: 150px; top: 150px; }
-    100% { right: 0; top: 0; }
-}
-
-@keyframes moveSphere3 {
-    0% { left: 0; top: 0; }
-    50% { left: 150px; top: 150px; }
-    100% { left: 0; top: 0; }
-}
-
-.sphere1 {
-    animation-name: moveSphere1;
-}
-
-.sphere2 {
-    animation-name: moveSphere2;
-}
-
-.sphere3 {
-    animation-name: moveSphere
-        
-/* Add this media query to adjust styles for mobile devices */
-@media only screen and (max-width: 767px) {
-
-    #Fabric_Background {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: calc(100% / 1.36);
-        left: -34.136px;
-        top: -202.552px;
-        overflow: visible;
-    }
-
-    #JS_Logo {
-        mix-blend-mode: luminosity;
-        filter: drop-shadow(-5px 3px 7px rgba(140, 141, 157, 0.722));
-        position: absolute;
-        width: 93px;
-        height: 70px;
-        left: 29px;
-        top: 24px;
-        overflow: visible;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-    }
-
-    #JS_Logo:hover {
-        transform: scale(1.1);
-    }
-
-    #n_D_Anima_01 {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        left: 930px;
-        top: 0px;
-        overflow: visible;
-    }
-
-    #Component_7__2 {
-        mix-blend-mode: normal;
-        position: absolute;
-        width: 100%; /* Adjust width for mobile view */
-        height: auto; /* Adjust height for mobile view */
-        left: auto; /* Reset left position for mobile view */
-        top: auto; /* Reset top position for mobile view */
-        overflow: visible; /* Reset overflow for mobile view */
-        background-image: none; /* Reset background image for mobile view */
-        backdrop-filter: none; /* Reset backdrop filter for mobile view */
-        opacity: 1; /* Reset opacity for mobile view */
-    }
-
-    #n_1 {
-        position: relative;
-        width: 100%; /* Adjust width for mobile view */
-        height: auto; /* Adjust height for mobile view */
-        left: auto; /* Reset left position for mobile view */
-        top: auto; /* Reset top position for mobile view */
-        overflow: visible; /* Reset overflow for mobile view */
-    }
+	position: relative;
+	width: 1331px;
+	height: 667px;
+	left: -125px;
+	top: 1066px;
+	overflow: visible;
 }
