@@ -36,8 +36,8 @@
 }
 
 #Fabric_Background {
-    position: fixed;
-    width: 100%;
+    position: relative;
+    width: 1170px;
     height: 2325.104px;
     left: -34.136px;
     top: -202.552px;
