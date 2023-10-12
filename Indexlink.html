@@ -16,41 +16,41 @@
         
         #videoContainer {
             position: absolute;
-            width: 1145.997px;
-            height: 2325.104px;
-            left: -34.136px;
-            top: -202.552px;
-            overflow: visible;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
             cursor: pointer;
-            transition: transform 0.8s ease;
-        }
-
-        #videoContainer:hover {
-            transform: scale(1.1);
-            transition: transform 0.8s ease;
         }
 
         #videoContainer video {
             width: 100%;
             height: 100%;
             object-fit: cover; /* Make sure the video covers the entire container */
+            transition: transform 0.8s ease;
         }
 
-        #videoContainer img {
+        #videoContainer video:hover {
+            transform: scale(1.1);
+        }
+
+        #Fabric_Background {
             position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover; /* Make sure the image covers the entire container */
+            left: -34.136px;
+            top: -202.552px;
+            overflow: visible;
         }
 
+        /* Your existing CSS... */
     </style>
 </head>
 <body>
     <div id="Landing">
         <div id="videoContainer">
-            <video id="video" src="Gen-2 963489532, Fabric_Backgroundpn, M 10.mp4" muted autoplay loop></video>
+            <video id="video" src="Gen-2_963489532_Fabric_Backgroundpn_M_10.mp4" muted loop></video>
             <img id="Fabric_Background" src="Fabric_Background.png" srcset="Fabric_Background.png 1x, Fabric_Background@2x.png 2x">
         </div>
         
@@ -74,6 +74,7 @@
     </div>
 
     <script>
+        // Play video on hover
         const video = document.getElementById('video');
         const videoContainer = document.getElementById('videoContainer');
         
@@ -83,6 +84,7 @@
         
         videoContainer.addEventListener('mouseout', () => {
             video.pause();
+            video.currentTime = 0; // Reset video to start
         });
     </script>
 </body>
