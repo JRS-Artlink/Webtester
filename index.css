@@ -21,7 +21,8 @@
 
 #Landing {
     position: relative;
-    width: 1080px;
+    max-width: 1080px;
+    margin: 0 auto;
     height: 1920px;
     font-family: impact;
     background-color: rgba(255,255,255,1);
@@ -30,15 +31,16 @@
     --web-view-id: Landing;
     --web-scale-to-fit: true;
     --web-scale-to-fit-type: fit;
-    --web-scale-on-resize: false;
+    --web-scale-on-resize: true;
     --web-enable-deep-linking: true;
     --web-page-font: impact;
 }
 
 #Fabric_Background {
-    position: absolute;
-    width: 1145.997px;
-    height: 2325.104px;
+    position: relative;
+    width: 100%; /* Set width to 100% */
+    height: 0; /* Set height to 0 */
+    padding-bottom: calc(100% / 1.36); /* Maintain 1.36 aspect ratio (adjust as needed) */
     left: -34.136px;
     top: -202.552px;
     overflow: visible;
@@ -161,4 +163,25 @@
 
 .sphere3 {
     animation-name: moveSphere3;
+}
+
+/* Add this media query to adjust styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    #Landing {
+        height: auto;
+    }
+
+    #Fabric_Background {
+        padding-bottom: calc(100% / 1.36); /* Maintain 1.36 aspect ratio (adjust as needed) */
+    }
+
+    #JS_Logo {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .sphere {
+        width: 30px;
+        height: 30px;
+    }
 }
