@@ -166,7 +166,7 @@
 }
 
 /* Add this media query to adjust styles for mobile devices */
-@media only screen and (max-width: 747px) {
+@media only screen and (max-width: 1170px) {
 
     #Fabric_Background {
         position: absolute;
@@ -206,12 +206,12 @@
 
     #Component_7__2 {
         mix-blend-mode: normal;
-        position: absolute;
+        position: relative;
         width: 100%; /* Adjust width for mobile view */
         height: auto; /* Adjust height for mobile view */
         left: auto; /* Reset left position for mobile view */
         top: auto; /* Reset top position for mobile view */
-        overflow: visible; /* Reset overflow for mobile view */
+        overflow: hidden; /* Reset overflow for mobile view */
         background-image: none; /* Reset background image for mobile view */
         backdrop-filter: none; /* Reset backdrop filter for mobile view */
         opacity: 1; /* Reset opacity for mobile view */
