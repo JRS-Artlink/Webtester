@@ -9,52 +9,44 @@
     <script id="applicationScript" type="text/javascript" src="index.js"></script>
     
     <style>
-        .hover-effect:hover {
-            transform: scale(1.1);
-            transition: transform 0.8s ease;
-        }
-        
-        #videoContainer {
+        #Fabric_Background {
             position: absolute;
             width: 1145.997px;
             height: 2325.104px;
             left: -34.136px;
             top: -202.552px;
             overflow: visible;
-            cursor: pointer;
-            transition: transform 0.8s ease;
+            transition: opacity 0.5s ease;
         }
 
-        #videoContainer:hover {
-            transform: scale(1.1);
+        #videoContainer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease;
         }
 
         #videoContainer video {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Make sure the video covers the entire container */
+            object-fit: cover;
         }
-
-        #videoContainer img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Make sure the image covers the entire container */
-        }
-        
     </style>
 </head>
 <body>
     <div id="Landing">
+        <div id="Fabric_Background">
+            <img src="Fabric_Background.png" srcset="Fabric_Background.png 1x, Fabric_Background@2x.png 2x">
+        </div>
+
         <div id="videoContainer">
             <video id="video" src="Gen-2 963489532, Fabric_Backgroundpn, M 10.mp4" muted autoplay loop></video>
-            <img id="Fabric_Background" src="Fabric_Background.png" srcset="Fabric_Background.png 1x, Fabric_Background@2x.png 2x">
         </div>
         
-        <a href="https://quantaknot.com/" target="_blank"> <!-- Added hyperlink -->
-            <img id="JS_Logo" src="JS_Logo.png" srcset="JS_Logo.png 1x, JS_Logo@2x.png 2x" class="hover-effect"> <!-- Added hover effect -->
+        <a href="https://quantaknot.com/" target="_blank">
+            <img id="JS_Logo" src="JS_Logo.png" srcset="JS_Logo.png 1x, JS_Logo@2x.png 2x">
         </a>
         
         <img id="n_D_Anima_01" src="n_D_Anima_01.png" srcset="n_D_Anima_01.png 1x, n_D_Anima_01@2x.png 2x">
@@ -73,14 +65,19 @@
     </div>
 
     <script>
-        const video = document.getElementById('video');
+        const fabricBackground = document.getElementById('Fabric_Background');
         const videoContainer = document.getElementById('videoContainer');
+        const video = document.getElementById('video');
         
-        videoContainer.addEventListener('mouseover', () => {
+        fabricBackground.addEventListener('mouseover', () => {
+            fabricBackground.style.opacity = '0';
+            videoContainer.style.opacity = '1';
             video.play();
         });
         
         videoContainer.addEventListener('mouseout', () => {
+            fabricBackground.style.opacity = '1';
+            videoContainer.style.opacity = '0';
             video.pause();
         });
     </script>
