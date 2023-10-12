@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="index.css"/>
     <script id="applicationScript" type="text/javascript" src="index.js"></script>
     
-    <style>
+       <style>
         .hover-effect:hover {
             transform: scale(1.1);
             transition: transform 0.8s ease;
@@ -16,35 +16,35 @@
         
         #videoContainer {
             position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            overflow: hidden;
+            width: 1145.997px;
+            height: 2325.104px;
+            left: -34.136px;
+            top: -202.552px;
+            overflow: visible;
             cursor: pointer;
+            transition: transform 0.8s ease;
+        }
+
+        #videoContainer:hover {
+            transform: scale(1.1);
+            transition: transform 0.8s ease;
         }
 
         #videoContainer video {
             width: 100%;
             height: 100%;
             object-fit: cover; /* Make sure the video covers the entire container */
-            transition: transform 0.8s ease;
         }
 
-        #videoContainer video:hover {
-            transform: scale(1.1);
-        }
-
-        #Fabric_Background {
+        #videoContainer img {
             position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover; /* Make sure the image covers the entire container */
-            left: -34.136px;
-            top: -202.552px;
-            overflow: visible;
         }
 
-        /* Your existing CSS... */
     </style>
 </head>
 <body>
