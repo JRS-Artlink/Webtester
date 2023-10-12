@@ -194,7 +194,7 @@
     }
 
     #Component_7__2 {
-        position: relative;
+        position: absolute;
         width: 100%; /* Adjust width for mobile view */
         height: auto; /* Adjust height for mobile view */
         left: auto; /* Reset left position for mobile view */
