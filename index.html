@@ -8,58 +8,43 @@
     <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="index.css"/>
     <script id="applicationScript" type="text/javascript" src="index.js"></script>
     
-       <style>
+    <style>
         .hover-effect:hover {
             transform: scale(1.1);
             transition: transform 0.8s ease;
         }
         
-        #videoContainer {
-            position: absolute;
-            width: 1145.997px;
-            height: 2325.104px;
-            left: -34.136px;
-            top: -202.552px;
-            overflow: visible;
-            cursor: pointer;
-            transition: transform 0.8s ease;
+        body {
+            overflow: hidden; /* Disable scrolling */
         }
 
-        #videoContainer:hover {
-            transform: scale(1.1);
-            transition: transform 0.8s ease;
+        #videoContainer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+            display: none; /* Initially hide the video container */
         }
 
         #videoContainer video {
             width: 100%;
-            height: 100%;
+            height: auto;
             object-fit: cover; /* Make sure the video covers the entire container */
         }
-
-        #videoContainer img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Make sure the image covers the entire container */
-        }
-              
-        body {
-            overflow: hidden; /* Disable scrolling */
-        }
- 
     </style>
 </head>
 <body>
     <div id="Landing">
         <div id="videoContainer">
-            <video id="video" src="Gen-2_963489532_Fabric_Backgroundpn_M_10.mp4" muted loop></video>
-            <img id="Fabric_Background" src="Fabric_Background.png" srcset="Fabric_Background.png 1x, Fabric_Background@2x.png 2x">
+            <video id="video" src="Gen-2_963489532_Fabric_Backgroundpn_M_10.mp4" muted loop autoplay></video>
         </div>
         
-        <a href="https://quantaknot.com/" target="_blank"> <!-- Added hyperlink -->
-            <img id="JS_Logo" src="JS_Logo.png" srcset="JS_Logo.png 1x, JS_Logo@2x.png 2x" class="hover-effect"> <!-- Added hover effect -->
+        <img id="Fabric_Background" src="Fabric_Background.png" srcset="Fabric_Background.png 1x, Fabric_Background@2x.png 2x" class="hover-effect">
+        
+        <a href="https://quantaknot.com/" target="_blank">
+            <img id="JS_Logo" src="JS_Logo.png" srcset="JS_Logo.png 1x, JS_Logo@2x.png 2x" class="hover-effect">
         </a>
         
         <img id="n_D_Anima_01" src="n_D_Anima_01.png" srcset="n_D_Anima_01.png 1x, n_D_Anima_01@2x.png 2x">
@@ -78,16 +63,18 @@
     </div>
 
     <script>
-        // Play video on hover
-        const video = document.getElementById('video');
+        const fabricBackground = document.getElementById('Fabric_Background');
         const videoContainer = document.getElementById('videoContainer');
-        
-        videoContainer.addEventListener('mouseover', () => {
-            video.play();
+        const video = document.getElementById('video');
+
+        fabricBackground.addEventListener('mouseover', () => {
+            videoContainer.style.display = 'block'; // Show video container
+            video.play(); // Play video
         });
-        
-        videoContainer.addEventListener('mouseout', () => {
-            video.pause();
+
+        fabricBackground.addEventListener('mouseout', () => {
+            videoContainer.style.display = 'none'; // Hide video container
+            video.pause(); // Pause video
             video.currentTime = 0; // Reset video to start
         });
     </script>
