@@ -167,33 +167,63 @@
 
 /* Add this media query to adjust styles for mobile devices */
 @media only screen and (max-width: 1170px) {
-    #Landing {
-        height: 1170px;
-    }
 
     #Fabric_Background {
-        padding-bottom: calc(100% / 1.36); /* Maintain 1.36 aspect ratio (adjust as needed) */
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: calc(100% / 1.36);
+        left: -34.136px;
+        top: -202.552px;
+        overflow: visible;
     }
 
     #JS_Logo {
-        width: 60px;
-        height: 45px;
+        mix-blend-mode: luminosity;
+        filter: drop-shadow(-5px 3px 7px rgba(140, 141, 157, 0.722));
+        position: absolute;
+        width: 93px;
+        height: 70px;
+        left: 29px;
+        top: 24px;
+        overflow: visible;
+        cursor: pointer;
+        transition: transform 0.3s ease;
     }
-    
-    .sphere {
-        width: 30px;
-        height: 30px;
+
+    #JS_Logo:hover {
+        transform: scale(1.1);
     }
-     #Component_7__2 {
-        display: block; /* Ensure the element is set to be visible */
-        width: 100%; /* Adjust width as needed for mobile view */
-        height: auto; /* Adjust height as needed for mobile view */
-        position: relative; /* Reset position for mobile view */
+
+    #n_D_Anima_01 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        left: 930px;
+        top: 0px;
+        overflow: visible;
+    }
+
+    #Component_7__2 {
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 100%; /* Adjust width for mobile view */
+        height: auto; /* Adjust height for mobile view */
         left: auto; /* Reset left position for mobile view */
         top: auto; /* Reset top position for mobile view */
-        opacity: 1; /* Reset opacity for mobile view */
+        overflow: visible; /* Reset overflow for mobile view */
         background-image: none; /* Reset background image for mobile view */
         backdrop-filter: none; /* Reset backdrop filter for mobile view */
+        opacity: 1; /* Reset opacity for mobile view */
+    }
+
+    #n_1 {
+        position: relative;
+        width: 100%; /* Adjust width for mobile view */
+        height: auto; /* Adjust height for mobile view */
+        left: auto; /* Reset left position for mobile view */
+        top: auto; /* Reset top position for mobile view */
+        overflow: visible; /* Reset overflow for mobile view */
     }
 }
-}
+
