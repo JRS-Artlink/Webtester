@@ -3,7 +3,7 @@
     --web-view-id: Landing;
     --web-scale-to-fit: true;
     --web-scale-to-fit-type: fit;
-    --web-scale-on-resize: false;
+    --web-scale-on-resize: true;
     --web-enable-deep-linking: true;
     --web-page-font: impact;
 }
@@ -21,7 +21,8 @@
 
 #Landing {
     position: relative;
-    width: 1080px;
+    max-width: 1080px;
+    margin: 0 auto;
     height: 1920px;
     font-family: impact;
     background-color: rgba(255,255,255,1);
@@ -30,15 +31,15 @@
     --web-view-id: Landing;
     --web-scale-to-fit: true;
     --web-scale-to-fit-type: fit;
-    --web-scale-on-resize: false;
+    --web-scale-on-resize: true;
     --web-enable-deep-linking: true;
     --web-page-font: impact;
 }
 
 #Fabric_Background {
-    position: absolute;
-    width: 1145.997px;
-    height: 2325.104px;
+    position: relative;
+    width: 100%;
+    height: 100%;
     left: -34.136px;
     top: -202.552px;
     overflow: visible;
@@ -73,92 +74,51 @@
 #Component_7__2 {
     mix-blend-mode: normal;
     position: absolute;
-    width: 1202.348px;
-    height: 1330.852px;
-    left: -73.252px;
-    top: 615px;
-    overflow: hidden;
-    background-image: linear-gradient(to bottom, rgba(109, 215, 241, 0), rgb(0, 0, 0));
-    backdrop-filter: blur(4px);
-    opacity: 0.3;
+    width: 100%;
+    height: fit-content; /* Adjust height for mobile view */
+    left: auto;
+    top: auto;
+    overflow: visible;
+    background-image: none;
+    backdrop-filter: none;
+    opacity: 1;
 }
 
 #n_1 {
     position: relative;
-    width: 1331px;
-    height: 667px;
-    left: -125px;
-    top: 1066px;
-    overflow: hidden;
+    width: 100%;
+    height: auto;
+    left: auto;
+    top: auto;
+    overflow: visible;
 }
 
-.sphere-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/* Your existing CSS... */
 
-.sphere {
-    width: 50px;
-    height: 50px;
-    background-color: #3498db;
-    border-radius: 50%;
-    position: relative;
-    animation: rotate 15s linear infinite;
-}
+@media only screen and (max-width: 767px) {
+    #Landing {
+        height: auto;
+    }
 
-.sphere2 {
-    background-color: #4ae73c;
-    animation: rotate2 10s linear infinite;
-}
+    #videoContainer {
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+    }
 
-.sphere3 {
-    background-color: #fcf048;
-    animation: rotate3 5s linear infinite;
-}
+    #videoContainer img, #videoContainer video {
+        width: 100%;
+        height: auto;
+    }
 
-@keyframes rotate {
-    0% { transform: rotate(15deg); }
-    100% { transform: rotate(360deg); }
-}
+    #JS_Logo {
+        width: 60px;
+        height: 45px;
+    }
 
-@keyframes rotate2 {
-    0% { transform: rotate(90deg); }
-    100% { transform: rotate(-360deg); }
-}
-
-@keyframes rotate3 {
-    0% { transform: rotate(270deg); }
-    100% { transform: rotate(360deg); }
-}
-
-@keyframes moveSphere1 {
-    0% { bottom: 150; top: 0; }
-    50% { bottom: 150px; top: 150px; }
-    100% { bottom: 0; top: 0; }
-}
-
-@keyframes moveSphere2 {
-    0% { right: 0; top: 0; }
-    50% { right: 150px; top: 150px; }
-    100% { right: 0; top: 0; }
-}
-
-@keyframes moveSphere3 {
-    0% { left: 0; top: 0; }
-    50% { left: 150px; top: 150px; }
-    100% { left: 0; top: 0; }
-}
-
-.sphere1 {
-    animation-name: moveSphere1;
-}
-
-.sphere2 {
-    animation-name: moveSphere2;
-}
-
-.sphere3 {
-    animation-name: moveSphere3;
+    .sphere {
+        width: 30px;
+        height: 30px;
+    }
 }
