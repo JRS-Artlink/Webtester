@@ -164,24 +164,45 @@
     animation-name: moveSphere3;
 }
 
-/* Add this media query to adjust styles for mobile devices */
+/* Your existing CSS... */
+
 @media only screen and (max-width: 767px) {
     #Landing {
         height: auto;
     }
 
-    #Fabric_Background {
-        max-width: none; /* Remove the max-width property */
-        max-height: none; /* Remove the max-height property */
+    #videoContainer {
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 0;
+    }
+
+    #videoContainer img, #videoContainer video {
+        width: 100%;
+        height: auto;
     }
 
     #JS_Logo {
         width: 60px;
         height: 45px;
     }
-    
+
     .sphere {
         width: 30px;
         height: 30px;
     }
+
+    #Component_7__2 {
+        position: relative;
+        width: 100%; /* Adjust width for mobile view */
+        height: auto; /* Adjust height for mobile view */
+        left: auto; /* Reset left position for mobile view */
+        top: auto; /* Reset top position for mobile view */
+        overflow: visible; /* Reset overflow for mobile view */
+        background-image: none; /* Reset background image for mobile view */
+        backdrop-filter: none; /* Reset backdrop filter for mobile view */
+        opacity: 1; /* Reset opacity for mobile view */
+    }
 }
+
