@@ -62,23 +62,16 @@
         </div>
     </div>
 
-    <script>
-        const fabricBackground = document.getElementById('Fabric_Background');
-        const videoContainer = document.getElementById('videoContainer');
-        const video = document.getElementById('video');
+    document.addEventListener('DOMContentLoaded', function() {
+    var video = document.getElementById('background-video');
 
-        fabricBackground.addEventListener('mouseover', () => {
-            fabricBackground.style.display = 'none'; // Hide Fabric_Background.png
-            videoContainer.style.display = 'block'; // Show video container
-            video.play(); // Play video
-        });
+    // Play the video
+    video.play();
 
-        fabricBackground.addEventListener('mouseout', () => {
-            fabricBackground.style.display = 'block'; // Show Fabric_Background.png
-            videoContainer.style.display = 'none'; // Hide video container
-            video.pause(); // Pause video
-            video.currentTime = 0; // Reset video to start
-        });
-    </script>
+    // Pause the video when it ends
+    video.addEventListener('ended', function() {
+        video.pause();
+    });
+});
 </body>
 </html>
