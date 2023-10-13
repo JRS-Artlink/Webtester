@@ -84,6 +84,7 @@
     left: 29px;
     top: 24px;
     overflow: visible;
+    z-index: +1;  /* This ensures the image is behind other positioned elements */
     cursor: pointer;
     /* Removed the hover effect here because it's redundant with .hover-effect */
 }
@@ -117,6 +118,7 @@
     left: -125px;
     top: 1066px;
     overflow: hidden;
+    z-index: +1;  /* This ensures the image is behind other positioned elements */
 }
 
 .sphere-container {
@@ -171,3 +173,12 @@
     animation-name: moveSphere3;
 }
 
+#Fabric_Background {
+    position: absolute;
+    width: 1170px;
+    height: 2325.104px;
+    left: -34.136px;
+    top: -202.552px;
+    overflow: visible;
+    z-index: -1;  /* This ensures the image is behind other positioned elements */
+}
