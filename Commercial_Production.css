@@ -22,9 +22,10 @@
     position: relative;
     width: 1080px;
     height: 1920px;
-    left: 0px;
-    top: 0px;
+    left: 50%;
+    top: 50%;
     overflow: hidden;
+    transform: translate(-50%, -50%); /* Centering method */
 }
 
 .back-icon {
@@ -33,4 +34,10 @@
     left: 10px;  /* Adjust as needed */
     font-size: 72px;  /* Adjust as needed */
     cursor: pointer;
+}
+/* Media query example for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    #null {
+        /* Add styles specific to mobile devices or small screens here */
+    }
 }
