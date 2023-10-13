@@ -1,25 +1,36 @@
 .mediaViewInfo {
-	--web-view-name: Commercial Production;
-	--web-view-id: Commercial_Production;
-	--web-scale-to-fit: true;
-	--web-scale-to-fit-type: fit;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+    --web-view-name: Commercial Production;
+    --web-view-id: Commercial_Production;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: fit;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
 }
+
 :root {
-	--web-view-ids: Commercial_Production;
+    --web-view-ids: Commercial_Production;
 }
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
 }
+
 #null {
-	position: absolute;
-	width: 1080px;
-	height: 1920px;
-	left: 1781px;
-	top: 0px;
-	overflow: hidden;
+    position: absolute;
+    width: 1080px;
+    height: 1920px;
+    left: 1781px;
+    top: 0px;
+    overflow: hidden;
+}
+
+.back-icon {
+    position: absolute;
+    top: 10px;   /* Adjust as needed */
+    left: 10px;  /* Adjust as needed */
+    font-size: 24px;  /* Adjust as needed */
+    cursor: pointer;
 }
