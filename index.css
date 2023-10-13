@@ -1,3 +1,4 @@
+/* @mediaViewInfo isn't standard CSS. If it's specific to some software or framework, comment it out for general use.
 @mediaViewInfo {
     --web-view-name: Landing;
     --web-view-id: Landing;
@@ -6,7 +7,8 @@
     --web-scale-on-resize: false;
     --web-enable-deep-linking: true;
     --web-page-font: impact;
-}
+} 
+*/
 
 :root {
     --web-view-ids: Landing;
@@ -54,11 +56,7 @@
     top: 24px;
     overflow: visible;
     cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-#JS_Logo:hover {
-    transform: scale(1.1);
+    /* Removed the hover effect here because it's redundant with .hover-effect */
 }
 
 #n_D_Anima_01 {
@@ -108,31 +106,12 @@
     animation: rotate 15s linear infinite;
 }
 
-.sphere2 {
-    background-color: #4ae73c;
-    animation: rotate2 10s linear infinite;
-}
-
-.sphere3 {
-    background-color: #fcf048;
-    animation: rotate3 5s linear infinite;
-}
-
 @keyframes rotate {
     0% { transform: rotate(15deg); }
     100% { transform: rotate(360deg); }
 }
 
-@keyframes rotate2 {
-    0% { transform: rotate(90deg); }
-    100% { transform: rotate(-360deg); }
-}
-
-@keyframes rotate3 {
-    0% { transform: rotate(270deg); }
-    100% { transform: rotate(360deg); }
-}
-
+/* The below keyframes and classes are not used in your provided HTML, but they can be kept for future use. */
 @keyframes moveSphere1 {
     0% { bottom: 150; top: 0; }
     50% { bottom: 150px; top: 150px; }
