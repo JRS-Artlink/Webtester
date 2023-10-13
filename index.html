@@ -62,7 +62,7 @@
     <div id="Landing">
         <div id="background-container"> <!-- Added background container -->
             <img id="Fabric_Background" class="background-image" src="Fabric_Background.png" srcset="Fabric_Background.png 1x, Fabric_Background@2x.png 2x">
-            <video id="background-video" class="background-video" src="01.mp4" autoplay loop muted></video>
+            <video id="background-video" class="background-video" src="01.mp4" autoplay loop muted playsinline></video>
         </div>
 
         <img id="Fabric_Background" src="Fabric_Background.png" srcset="Fabric_Background.png 1x, Fabric_Background@2x.png 2x" class="hover-effect">
@@ -89,7 +89,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var video = document.getElementById('background-video');
-            video.addEventListener('canplaythrough', function() {
+            video.addEventListener('loadedmetadata', function() {
                 video.play();
             });
             video.addEventListener('ended', function() {
