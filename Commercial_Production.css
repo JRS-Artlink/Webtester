@@ -19,7 +19,7 @@
 }
 
 #null {
-    position: absolute;
+    position: relative;
     width: 1080px;
     height: 1920px;
     left: 0px;
