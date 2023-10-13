@@ -141,3 +141,18 @@
 .sphere3 {
     animation-name: moveSphere3;
 }
+
+#videoContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* Let's bring it to a neutral stacking order for now. */
+}
+
+#videoContainer video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
