@@ -27,7 +27,7 @@ body, html {
 }
 
 #null {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;      /* Image will stretch or shrink as per the viewport width */
@@ -43,9 +43,10 @@ body, html {
     cursor: pointer;
 }
 
-/* Media query example for screens smaller than 1170px */
-@media only screen and (max-width: 1170px) {
+@media only screen and (min-width: 992px) {
+    /* Adjustments for larger screens go here. For instance: */
     #null {
-        /* Add styles specific to mobile devices or small screens here */
+        max-width: 1171px; /* or whatever your design's max width is */
+        margin: 0 auto; /* center the content */
     }
 }
