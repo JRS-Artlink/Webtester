@@ -14,8 +14,9 @@
 }
 #Commercial_Production {
 	position: absolute;
-	width: auto;
-	height: auto;
+	width: 100%;
+	height: 1200;
+        margin: 0 auto; /* Centers the container on larger screens */
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
 	--web-view-name: Commercial Production;
@@ -43,7 +44,9 @@
 }
 #Beauty366565 {
 	position: absolute;
-	width: 1044px;
+	width: 80%;
+        max-width: 1044px;
+        margin: 0 auto; /* Centers the element */
 	height: 1882px;
 	left: 20px;
 	top: 19px;
@@ -105,10 +108,32 @@
 	top: 0px;
 	overflow: visible;
 }
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    #Beauty366565 {
+        width: 95%; /* Increase width for smaller screens */
+        top: 10px;  /* Adjust top spacing for smaller screens */
+    }
+
+    /* Additional mobile-specific styles go here */
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    #Beauty366565 {
+        width: 90%; 
+        top: 15px;
+    }
+
+    /* Additional tablet-specific styles go here */
+}
+
+/* Desktop styles */
 @media only screen and (min-width: 992px) {
-    /* Adjustments for larger screens go here */
     #Commercial_Production {
         max-width: auto;
         margin: auto; 
     }
 
+    /* Additional desktop-specific styles go here */
+}
