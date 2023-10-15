@@ -14,8 +14,8 @@
 }
 #Commercial_Production {
 	position: absolute;
-	width: 1080px;
-	height: 1920px;
+	width: auto;
+	height: auto;
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
 	--web-view-name: Commercial Production;
