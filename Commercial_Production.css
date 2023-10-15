@@ -1,0 +1,118 @@
+.mediaViewInfo {
+	--web-view-name: Commercial Production;
+	--web-view-id: Commercial_Production;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Commercial_Production;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Commercial_Production {
+	position: absolute;
+	width: 1080px;
+	height: 1920px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Commercial Production;
+	--web-view-id: Commercial_Production;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+.back-button-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10; /* Make sure it stays on top of the image */
+}
+
+.back-icon {
+    font-size: 72px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+    /* Adjustments for larger screens go here */
+    #null {
+        max-width: auto;
+        margin: auto; 
+    }
+}
+#Beauty366565 {
+	position: absolute;
+	width: 1044px;
+	height: 1882px;
+	left: 20px;
+	top: 19px;
+	overflow: visible;
+}
+#Component_10__1 {
+	position: absolute;
+	width: 390px;
+	height: 387px;
+	left: 374px;
+	top: 1455px;
+	overflow: visible;
+}
+#n_023_new_cloth_sim_clothbluw_ {
+	filter: drop-shadow(18px 19px 12px rgba(172, 189, 228, 0.722));
+	position: absolute;
+	width: 390px;
+	height: 387px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Component_11__1 {
+	position: absolute;
+	width: 421px;
+	height: 380px;
+	left: 358px;
+	top: 81px;
+	overflow: visible;
+}
+#n_023_new_cloth_sim_pink {
+	filter: drop-shadow(18px 19px 12px rgba(172, 189, 228, 0.741));
+	position: absolute;
+	width: 421px;
+	height: 380px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Component_12__1 {
+	position: absolute;
+	width: 390px;
+	height: 395px;
+	left: 374px;
+	top: 803px;
+	overflow: visible;
+	transition: all 0.30000001192092896s ease-out;
+	--web-animation: fadein 0.30000001192092896s ease-out;
+	--web-action-type: page;
+	--web-action-target: 3D_animation_Motion_Graphics.html;
+	cursor: pointer;
+}
+#n_023_new_cloth_sim_green {
+	filter: drop-shadow(18px 19px 12px rgba(172, 189, 228, 0.8));
+	position: absolute;
+	width: 390px;
+	height: 395px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+
