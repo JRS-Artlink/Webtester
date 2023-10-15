@@ -29,8 +29,6 @@
 	}
 	100% {
 		opacity: 1;
-	}
-
 }
 .back-button-container {
     position: absolute;
@@ -42,14 +40,6 @@
 .back-icon {
     font-size: 72px;
     cursor: pointer;
-}
-
-@media only screen and (min-width: 992px) {
-    /* Adjustments for larger screens go here */
-    #null {
-        max-width: auto;
-        margin: auto; 
-    }
 }
 #Beauty366565 {
 	position: absolute;
@@ -115,4 +105,10 @@
 	top: 0px;
 	overflow: visible;
 }
+@media only screen and (min-width: 992px) {
+    /* Adjustments for larger screens go here */
+    #null {
+        max-width: auto;
+        margin: auto; 
+    }
 
