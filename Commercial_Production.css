@@ -112,6 +112,7 @@
 @media only screen and (max-width: 768px) {
     #Beauty366565 {
         width: 95%; /* Increase width for smaller screens */
+        height: 1170px
         top: 10px;  /* Adjust top spacing for smaller screens */
     }
 
