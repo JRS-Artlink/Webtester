@@ -15,7 +15,7 @@
 #Commercial_Production {
 	position: absolute;
 	width: 1080px;
-	height: auto;
+	height: 1920px;
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
 	--web-view-name: Commercial Production;
@@ -112,7 +112,6 @@
 @media only screen and (max-width: 768px) {
     #Beauty366565 {
         width: 95%; /* Increase width for smaller screens */
-        height: auto;
         top: 10px;  /* Adjust top spacing for smaller screens */
     }
 
