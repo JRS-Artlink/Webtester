@@ -132,7 +132,7 @@
 /* Desktop styles */
 @media only screen and (min-width: 992px) {
     #Commercial_Production {
-        max-width: auto;
+        max-width: 1170;
         margin: auto; 
     }
 
