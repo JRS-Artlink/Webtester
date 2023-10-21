@@ -1,0 +1,69 @@
+.mediaViewInfo {
+	--web-view-name: Commercial Production;
+	--web-view-id: Commercial_Production;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Commercial_Production;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Commercial_Production {
+	position: absolute;
+	width: 1080px;
+	height: 1920px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Commercial Production;
+	--web-view-id: Commercial_Production;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Runway_2023-10-21T17_28_07069Z {
+	position: absolute;
+	width: 2352px;
+	height: 2109px;
+	left: -664px;
+	top: -131px;
+	overflow: visible;
+}
+#Rectangle_7 {
+	filter: blur(5px);
+	fill: rgba(124, 100, 100, 0.49);
+	background-image: linear-gradient(to bottom, rgba(207, 218, 221, 0.966), rgb(224, 70, 70));
+}
+.Rectangle_7 {
+	filter: drop-shadow(0px 26px 6px rgba(231, 202, 202, 0.612));
+	position: absolute;
+	overflow: visible;
+	width: 1156px;
+	height: 962px;
+	left: -28px;
+	top: -33px;
+}
+.video-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Ensure it's in front of other elements */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+}
+
+/* Style for the video element within the video section */
+.video-section video {
+    width: 100%;
+    height: 100%;
+}
